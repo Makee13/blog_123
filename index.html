@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- BOOTSTRAP LINK CSS -->
+    <!-- BOOTSTRAP ICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- BOOTSTRAP COMPONENT AND SETTINGS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!----------------------------------------- HEADER SECTION ----------------------------------------->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid gx-4">
+                <!-- ME -->
+                <a class="navbar-brand" href="#"><i class="bi bi-person-circle me-2"></i>Your name</a>
+                <!-- TOGGLE BUTTON WHEN RESPONSIVE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- NAVIGATION -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./feature.html">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./viewpost.html">View Post</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!----------------------------------------- END HEADER SECTION ----------------------------------------->
+
+    <!----------------------------------------- MAIN SECTION ----------------------------------------->
+    <main class="main">
+        <!----------------------------------------- ABOUT SECTION ----------------------------------------->
+        <section class="about container mt-5 mb-5">
+            <div class="row">
+                <h2 class="about__header fw-500">Your Name</h2>
+                <span class="about__profession fs-5 mb-3 text-secondary">Profession</span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./images/img1.jpeg" alt="About Image">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mt-sm-3">About</h3>
+                    <p class="about__discription pe-5 text-secondary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quaerat quisquam possimus quis, fuga minus natus magni non ea doloremque.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae placeat quisquam tempore facilis quam impedit odit expedita officiis aliquam repudiandae.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!----------------------------------------- END ABOUT SECTION ----------------------------------------->
+
+
+        <!----------------------------------------- FEATURES SECTION ----------------------------------------->
+        <section class="feature container mb-5">
+            <h3 class="feature__title">Featured Post</h3>
+            <div class="row">
+                <div class="col-md mb-sm-5"><img class="rounded-2" src="./images/img2.jpeg" alt=""><span class="text-secondary feature__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis.</span></div>
+                <div class="col-md mb-sm-5"><img class="rounded-2" src="./images/img3.jpeg" alt=""><span class="text-secondary feature__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis.</span></div>
+                <div class="col-md mb-sm-5"><img class="rounded-2" src="./images/img5.jpeg" alt=""><span class="text-secondary feature__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis.</span></div>
+                <div class="col-md mb-sm-5"><img class="rounded-2" src="./images/img6.jpeg" alt=""><span class="text-secondary feature__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, facilis.</span></div>
+            </div>
+        </section>
+        <!----------------------------------------- END FEATURES SECTION ----------------------------------------->
+        
+
+        <!----------------------------------------- ARTICLES SECTION ----------------------------------------->
+        <section class="article container mb-5">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4 class="article__title">Title 1</h4>
+                                <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="article__title">Title 1</h4>
+                                <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                            </div>
+                        </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="article__title">Title 1</h4>
+                            <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="article__title">Title 1</h4>
+                            <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                        </div>
+                    </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4 class="article__title">Title 1</h4>
+                        <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="article__title">Title 1</h4>
+                        <p class="article__desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga voluptates eligendi harum sunt reiciendis? Magnam omnis pariatur recusandae illum exercitationem.</p>
+                    </div>
+                </div>
+          </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!----------------------------------------- END ARTICLES SECTION ----------------------------------------->
+
+
+        <!----------------------------------------- CONTACT SECTION ----------------------------------------->
+        <section class="contact container mb-5">
+            <h3 class="contact__title mb-4">Contact me</h3>
+            <form class="row">
+                <div class="col-md-4">
+                    <label class="mb-3 fw-500" for="">First Name</label>
+                    <input class="rounded-2 border-1 border_secondary d-block w-100 mb-3 p-2" type="text" name="first-name" id="" placeholder="Mark">
+                </div>
+                <div class="col-md-4">
+                    <label class="mb-3 fw-500" for="">Last Name</label>
+                    <input class="rounded-2 border-1 border_secondary d-block w-100 mb-3 p-2" type="text" name="last-name" id="" placeholder="Otto">
+                </div>
+                <div class="col-md-4 contact__input-user-name">
+                    <label class="mb-3 fw-500" for="">Username</label>
+                    <input class="rounded-2 border-1 border_secondary d-block w-100 mb-3 p-2" type="text" name="user-name" id="" placeholder="Mark">
+                </div>
+                <div class="col-md-7">
+                    <label class="mb-3 fw-500" for="">City</label>
+                    <input class="rounded-2 border-1 border_secondary d-block w-100 mb-3 p-2" type="text" name="city-name" id="" placeholder="Your city..">
+                </div>
+                <div class="col-md-3">
+                    <label class="mb-3 fw-500" for="">State</label>
+                    <select class="d-block w-100 p-2 mb-3" name="choose-state" id="">
+                        <option value="state">Choose</option>
+                        <option value="state">State</option>
+                        <option value="state">State</option>
+                        <option value="state">State</option>
+                        <option value="state">State</option>
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label class="mb-3 fw-500" for="">Zip</label>
+                    <input class="rounded-2 border-1 border_secondary d-block w-100 mb-3" type="file" name="zip" id="">
+                </div>
+                <div class="col-md-12 d-flex align-items-center mb-3">
+                    <input type="checkbox" name="agree-term" id="contact__input-check-term">
+                    <label class="ms-3 fw-500" for="agree-term">Agreed</label>
+                </div>
+                <div class="contact__submit">
+                    <button class="contact__submit-btn w-auto p-2 rounded-2 text-white bg-primary">Submit Form</button>
+                </div>
+            </form>
+        </section>
+        <!----------------------------------------- END CONTACT SECTION ----------------------------------------->
+
+    </main>
+    <!----------------------------------------- END MAIN SECTION ----------------------------------------->
+
+
+    <!----------------------------------------- FOOTER SECTION ----------------------------------------->
+    <footer class="footer container-fluid bg-light">
+        <div class="container">
+            <div class="row pt-5 pb-3">
+                <div class="col-md">
+                    <h4><i class="bi bi-twitter me-2"></i>Footer Item</h4>
+                    <ul class="p-0">
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h4><i class="bi bi-twitter me-2"></i>Footer Item</h4>
+                    <ul class="p-0">
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h4><i class="bi bi-twitter me-2"></i>Footer Item</h4>
+                    <ul class="p-0">
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <h4><i class="bi bi-twitter me-2"></i>Footer Item</h4>
+                    <ul class="p-0">
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                        <li><a class="text-primary" href="">Item</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row pt-2 pb-5">
+                <hr>
+                <span class="text-center text-secondary">&copy; Your Name 09/2021</span>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------------- END FOOTER SECTION ----------------------------------------->
+
+     
+    <!-- BOOTSTRAP LINK JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

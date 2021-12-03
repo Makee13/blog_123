@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+}
+
+img,
+svg {
+    display: inline-block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+//---------------------------------------- MIXIN--------------------------------------------
+
+// FLEX BOX
+@mixin flexbox($align: stretch, $justify: flex-start, $wrap: nowrap, $dir: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-wrap: $wrap;
+    flex-direction: $dir;
+}
+
+// SIZE BOX
+@mixin size($width:$height, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+// RESPONSIVE
+@mixin responsive($min: 0, $max: 0) {
+    @if $min !=0 and $max !=0 {
+        @media screen and (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    }
+
+    @else if $min !=0 {
+        @media screen and (min-width: $min) {
+            @content;
+        }
+    }
+
+    @else {
+        @media screen and (max-width: $max) {
+            @content;
+        }
+    }
+}
+
+//----------------------------------------END MIXIN--------------------------------------------
+
+
+// MAIN SCSS
+// ABOUT SECTION
+
+.about {
+    &__discription {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 10;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+// FEATURE SECTION
+.feature {
+    &__desc {
+        display: inline-block;
+        margin-top: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+
+// CONTACT SECTION
+.contact {
+    &__input-user-name {
+        position: relative;
+
+        input {
+            padding-left: 3rem!important;
+        }
+        &::before {
+            content: "@";
+            position: absolute;
+            bottom: 1rem;
+            left: 12px;
+            @include size(2.65rem, 2.65rem);
+            background-color: rgba(144, 144, 144, 0.267);
+            border-radius: 0.3rem 0 0 0.3rem;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+@include responsive(320px) {
+    .mt-sm-3 {
+        margin-top: 3rem!important;
+    }
+    .mb-sm-5 {
+        margin-bottom: 3rem!important;
+    }
+}
+
